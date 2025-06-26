@@ -1,0 +1,138 @@
+/*reset styles - make it look consistent across browsers*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*body styles*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(240, 55%, 55%);
+  padding: 20px;
+  line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "DM Serif Display", serif;
+  color: #fff;  
+  font-size:2.5em;
+}
+
+/*font styles*/
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*container - holds all our content*/
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #7b1acb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(132, 10, 238, 0.7);
+}
+/*heading - title styling*/
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+/*paragraph styling*/
+p {
+  text-align: center;
+  color: #b6b2b2;
+  margin-bottom: 30px;
+}
+/*Form Groups - Each input section*/
+.form-group {
+  margin-bottom: 20px;
+}
+/*label - text above each input*/
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #d8d3d3;
+  font-weight: bold;
+}
+
+/*input - text fields-text inputs*/
+/* input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #b89eda;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+ 
+} */
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #b89eda;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+
+/*input - text fields-text inputs*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1459ed;
+}
+/*checkbox Styling - special layout for checkboxes */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+.checkbox-group input[type="checkbox"] {
+    width:auto;
+    margin: right 10px;
+
+}
+.checkbox-group label {
+    margin-bottom:0;
+    font-weight: normal;
+}
+/* submit button - the send button*/
+button[type="submit"] {
+    
+    background-color: #389ef7;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width:100%;
+    transition: background-color 0.3s;
+}
+/* Button hover - when users hovers over button*/
+button[type="submit"]:hover {
+    background-color: #9adae6;
+}
